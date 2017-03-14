@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>KOINKOIN</title>
+<meta name="author" content="kkscrap">
+</head>
+<body>
+	<h1>
+		<a
+			href="../">KOINKOIN</a>
+		- maquette 1
+
+	</h1>
+	<h3>OBJECTIF</h3>
+	<p>Cette maquette se charge de récupérer le code source de 1 page web,
+		pour appliquer 1 filtre xpath</p>
+	<h3>URL</h3>
+	<p><?php echo $_SESSION ['koinkoin'] ['maquettes'] ['1'] ['config'] ['url_de_depart'] [0] ?></p>
+	<h3>FILTRE XPATH</h3>
+	<p>
+	
+	
+	<pre><?php echo $_SESSION ['koinkoin'] ['maquettes'] ['1'] ['config'] ['filtre_xpath'] [0] ["pattern"] ?></pre>
+	</p>
+
+	<h3>RESULTAT XPATH</h3>
+	<p><?php echo $_SESSION ['koinkoin'] ['maquettes'] [1] ['resultats'] ['match_xpath'] ?></p>
+
+	<h3>SESSION</h3>
+
+</body>
+</html>
+

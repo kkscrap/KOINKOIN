@@ -22,6 +22,6 @@ MISES A JOUR
 
 #################################
 
-- 20170315 ==> premiere maquette, qui extrait 1 contenu_texte_XPATH sur 1 URL_DE_DEPART
+- 20170315 ==> premiere maquette, qui scrape une URL_HTTPS pour obtenir un CONTENU_TEXTE_XPATH 
 
 http://dreamproject.fr/koinkoin/public/index.php/scrap/maquette1

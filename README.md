@@ -21,4 +21,5 @@ MISES A JOUR
 #################################
 
 - 20170315 ==> premiere maquette, extrait 1 contenu_texte_XPATH sur 1 url_de_depart
+
 http://dreamproject.fr/koinkoin/public/index.php/scrap/maquette1

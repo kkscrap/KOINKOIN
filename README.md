@@ -6,10 +6,10 @@
  |_|\_\\____/|_____||_| \_||_|\_\\____/|_____||_| \_|   
    
 
-Koinkoin est un programme php/zend qui permet(tra) d'extraire du contenu sur le web,
+Koinkoin est un programme php/zend qui permet(tra) d'extraire du contenu textuel sur le web,
 que l'on recupere(ra) sous la forme de csv ou d'autres formats.
 
-Les contenus seront extraits à l'aide de filtres de plusieurs types, comme les filtres XPATH ou REGEX
+Les contenus seront extraits à l'aide de filtres XPATH ou REGEX
 
 Site internet   : http://dreamproject.fr/koinkoin/public
 Github          : https://github.com/kkscrap/koinkoin

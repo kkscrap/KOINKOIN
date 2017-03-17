@@ -6,7 +6,7 @@
  |_|\_\\____/|_____||_| \_||_|\_\\____/|_____||_| \_|   
    
 
-Koinkoin est un projet php/zend qui permet d'extraire du contenu textuel sur le web, pour le récupérer dans un fichier csv json, ou encore un array (etc..).
+Koinkoin est un projet php/zend qui permet(tra) d'extraire du contenu textuel sur le web, pour le récupérer dans un fichier csv json, ou encore un array (etc..).
 
 Les contenus sont extraits à l'aide de filtres XPATH ou REGEX.
 
@@ -18,10 +18,10 @@ Mail            : koinkoin-php@dreamproject.fr
 
 #################################
 
-MISES A JOUR
+Exemple
 
 #################################
 
 - 20170315 ==> premiere maquette, qui scrape une URL_HTTPS pour obtenir un CONTENU_TEXTE_XPATH 
 
-http://dreamproject.fr/koinkoin/public/index.php/scrap/maquette1
+http://dreamproject.fr/koinkoin_20170315/public/index.php/scrap/maquette1

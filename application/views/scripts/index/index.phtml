@@ -4,9 +4,107 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>KOINKOIN</title>
 <meta name="author" content="kkscrap">
+<style>
+.dump {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: left;
+	padding: 5px;
+	background-color: #f6f6f6;
+	border: 1px dotted #d2d2d2;
+	color: #666666;
+	line-height: 20px;
+	font-size: 13px;
+	/* Pour avoir un retour à la ligne si la ligne dépasse la largeur du cadre */
+	/*white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;*/
+	overflow-y: auto;
+}
+
+.dump .indentation {
+	color: #dedede;
+}
+
+.dump .var {
+	color: #000000;
+	font-size: 24px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.dump .info-type {
+	color: #e88046;
+}
+
+.dump .access {
+	font-style: italic;
+	color: #aaaaaa;
+}
+
+.dump .type {
+	color: #aaaaaa;
+}
+
+.dump .equal {
+	color: #457b7b;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.dump .bracket {
+	color: #aaaaaa;
+}
+
+.dump .value {
+	font-size: 14px;
+}
+
+.dump .value.string {
+	color: #a52b2e;
+}
+
+.dump .value.string .hellip {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.dump .value.string .hellip .hellip {
+	font-size: 17px;
+}
+
+.dump .value.int {
+	color: #06a50d;
+}
+
+.dump .value.bool {
+	color: #861486;
+}
+
+.dump .value.float {
+	color: #185fa6;
+}
+
+.dump .value.empty {
+	color: #808080;
+}
+
+.dump .value.null {
+	color: #d2cc6d;
+}
+
+.dump .info-string {
+	color: #bbbbbb;
+	font-style: italic;
+}
+</style>
 </head>
-<body>
-	<h1>KOINKOIN</h1>
+<body class="dump">
+	<h1 class="var">KOINKOIN</h1>
 	<p>Koinkoin est un programme php/zend qui permet d'extraire du contenu
 		sur le web</p>
 	<p>Site internet : http://dreamproject.fr/koinkoin/public</p>
@@ -14,14 +112,11 @@
 	<p>Wiki : http://dreamproject.fr/koinkoin/wiki</p>
 	<p>Forum : http://dreamproject.fr/koinkoin/forum</p>
 	<p>Mail : koinkoin-php@dreamproject.fr</p>
-	<h2>MAQUETTES</h2>
+	<h2><a href='maquettes/'>MAQUETTES</a></h2>
+	<h2 class="var">ARCHIVES</h2>
 	<ol>
-		<li><a href='maquette/index'>Maquettes</a></li>
-	</ol>
-	<h2>ARCHIVES</h2>
-	<ol>
-		<li><a href='http://dreamproject.fr/koinkoin/archives/screenshot_maquette_20170318.png'>20170318 ==> Screenshot (2eme dump)</a></li>
-		<li><a href='http://dreamproject.fr/koinkoin/archives/screenshot_tout_premier_screenshot_maquette_1.png'>20170315 ==> Screenshot (dump)</a></li>
+		<li class="var"><a href='http://dreamproject.fr/koinkoin/archives/screenshot_tout_premier_screenshot_maquette_1.png'>20170315 ==> Screenshot (dump)</a></li>
+		<li class="var"><a href='http://dreamproject.fr/koinkoin/archives/screenshot_maquette_20170318.png'>20170318 ==> Screenshot (2eme dump)</a></li>
 	</ol>
 </body>
 </html>

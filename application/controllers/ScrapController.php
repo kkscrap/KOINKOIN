@@ -14,7 +14,6 @@ class ScrapController extends Zend_Controller_Action {
 		$_SESSION ['koinkoin'] ['maquettes'] [1] ['resultats'] ['match_xpath'] = $_SESSION ['koinkoin'] ['library'] ['koinkoin'] ['xpath'] ['koinkoin_xpath']->get_xpath_1_filtre_sur_1_html ( $_SESSION ['koinkoin'] ['maquettes'] ['1'] ['resultats'] ['code_html_tidy'], $_SESSION ['koinkoin'] ['maquettes'] ['1'] ['config'] ['filtre_xpath'] [0] ["pattern"], $_SESSION ['koinkoin'] ['maquettes'] ['1'] ['config'] ['filtre_xpath'] [0] ["tidy"] );
 		
 		// END
-		$_SESSION ['koinkoin'] ['library'] ['koinkoin'] ['dump'] ['dd_dump']->dump_dd_dump ( $_SESSION ['koinkoin'] );
 	}
 	public function screen1Action() {
 	}

@@ -22,7 +22,7 @@ class koinkoin {
 	public $kks;
 	public function __construct() {
 		$this->projet = array (
-				'nom' => 'koinkoin' 
+				'nom' => 'koinkoin314' 
 		);
 		$this->construct_zend ();
 		$this->construct_session ();
@@ -30,7 +30,6 @@ class koinkoin {
 		$this->main ();
 	}
 	private function main() {
-		$_SESSION [$this->projet ['nom']] ['library'] ['github'] = null;
 	}
 	private function construct_library_koinkoin() {
 		$this->construct_library_koinkoin_dump ();
@@ -39,27 +38,39 @@ class koinkoin {
 	}
 	private function construct_library_koinkoin_dump() {
 		$this->construct_library_koinkoin_dump_dd_dump ();
-		$this->construct_library_koinkoin_dump_php_dump_idealitic ();
+		$this->construct_library_koinkoin_dump_php_dump_idealitic (); // SDE #23
+		$this->construct_library_koinkoin_dump_php_dump_marcou ();
 	}
 	private function construct_library_koinkoin_dump_dd_dump() {
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/koinkoin_fonctions_dump.php';
-		$_SESSION [$this->projet ['nom']] ['library'] ['koinkoin'] ['dump'] ['dd_dump'] = new koinkoin_fonctions_dump ();
+		$_SESSION [$this->projet ['nom']] ['library_dump'] ['dd_dump'] = new koinkoin_fonctions_dump ();
 	}
 	private function construct_library_koinkoin_dump_php_dump_idealitic() {
-		
-		// SDE #23 probleme installation library/php_dump_idealitic
-		// require_once APPLICATION_PATH . '/../library/Koinkoin/dump/koinkoin_fonctions_dump.php';
+		// SDE #23
+		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/koinkoin_fonctions_dump.php';
+		$_SESSION [$this->projet ['nom']] ['library_dump'] ['idealitic'] = new koinkoin_fonctions_dump ();
+	}
+	private function construct_library_koinkoin_dump_php_dump_marcou() {
+		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/koinkoin_fonctions_dump.php';
+		$_SESSION [$this->projet ['nom']] ['library_dump'] ['php_dump_marcou'] = new koinkoin_fonctions_dump ();
 	}
 	private function construct_library_koinkoin_curl() {
 		require_once APPLICATION_PATH . '/../library/Koinkoin/curl/koinkoin_fonctions_curl.php';
-		$_SESSION [$this->projet ['nom']] ['library'] ['koinkoin'] ['curl'] ['koinkoin_curl'] = new koinkoin_fonctions_curl ();
+		$_SESSION [$this->projet ['nom']] ['library_curl'] ['koinkoin_curl'] = new koinkoin_fonctions_curl ();
 	}
 	private function construct_library_koinkoin_xpath() {
 		require_once APPLICATION_PATH . '/../library/Koinkoin/xpath/koinkoin_fonctions_xpath.php';
-		$_SESSION [$this->projet ['nom']] ['library'] ['koinkoin'] ['xpath'] ['koinkoin_xpath'] = new koinkoin_fonctions_xpath ();
+		$_SESSION [$this->projet ['nom']] ['library_xpath'] ['koinkoin_xpath'] = new koinkoin_fonctions_xpath ();
 	}
 	private function construct_session() {
+		Zend_Session::start ();
 		// $this->kks = new Zend_Session_Namespace('koinkoin'); // KoinKoin Session
+		// Zend_Session::destroy ();
+		// Zend_Session::namespaceUnset('default');
+		// $bootstrap = $this->getInvokeArg('bootstrap');
+		// $cache = $bootstrap->getResource('cache');
+		// $cache->clean(Zend_Cache::CLEANING_MODE_ALL);
+		
 		$kks = new \Zend_Session_Namespace ( $this->projet ['nom'] );
 		$kks->unsetAll ();
 	}

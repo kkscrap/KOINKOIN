@@ -25,3 +25,7 @@ Exemple
 - 20170315 ==> premiere maquette, qui scrape une URL_HTTPS pour obtenir un CONTENU_TEXTE_XPATH 
 
 http://dreamproject.fr/koinkoin_20170315/public/index.php/scrap/maquette1
+
+
+<img src="http://dreamproject.fr/koinkoin/archives/screenshot_maquette_20170318.png" alt="Smiley face" height="42" width="42">
+Try it Yourself »

@@ -1,10 +1,15 @@
 <?php
 class koinkoin_fonctions_dump {
 	public function __construct() {
-// 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/php_dump_idealitic/kkscrap/PHP_DUMP_IDEALITIC/src/Dump.php';
-// 		$_SESSION ['koinkoin'] ['library'] ['koinkoin']['dump'] ['php_dump_idealitic'] = new Dump ();
-		$_SESSION ['koinkoin'] ['library'] ['koinkoin']['dump'] ['php_dump_idealitic'] = null;		
-		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_dd/dump_dd.php'; // TODO: vars en dur a virer !
+		
+		
+		// php_dump_idealitic
+		// $_SESSION ['koinkoin314'] ['library'] ['koinkoin'] ['dump'] ['php_dump_dd'] = null;
+		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_dd/dump_dd.php'; // SDE #27
+		                                                                                 
+		// php_dump_marcou
+		                                                                                 // $_SESSION ['koinkoin314'] ['library'] ['koinkoin'] ['dump'] ['php_dump_marcou'] = null;
+		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/php_dump_marcou/dump.php';
 	}
 	public function dump_dd_dump($var) {
 		return d ( $var );
@@ -18,15 +23,11 @@ class koinkoin_fonctions_dump {
 		return ob_get_clean ();
 	}
 	public function php_dump_idealitic_dump($var) {
-		// return d($var);
 	}
 	public function php_dump_idealitic_config($var) {
-		
-		// SDE #23 probleme avec PHP_DUMP_IDEALITIC
-// 		$_SESSION ['koinkoin'] ['library'] ['dump'] ['php_dump_idealitic']->Dump()->config ( './', array (
-// 				'APP_PATH' => '/home/app/www',
-// 				'SYSTEM_PATH' => '/home/app/src' 
-// 		) );
+	}
+	public function php_dump_marcou($var) {
+		return dump ($var);
 	}
 }
 ?>

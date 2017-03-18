@@ -27,5 +27,7 @@ Exemple
 http://dreamproject.fr/koinkoin_20170315/public/index.php/scrap/maquette1
 
 
+![](http://dreamproject.fr/koinkoin/archives/screenshot_maquette_20170318.png)
+
 <img src="http://dreamproject.fr/koinkoin/archives/screenshot_maquette_20170318.png" alt="Smiley face" height="42" width="42">
 Try it Yourself »

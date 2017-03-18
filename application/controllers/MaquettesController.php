@@ -5,6 +5,7 @@ class MaquettesController extends Zend_Controller_Action {
 	public function indexAction() {
 	}
 	public function maquette1Action() {
+		$_SESSION ['koinkoin314'] ['configuration_projet'] [0] ['descriptif'] = "Koinkoin est un projet php/zend qui permet(tra) d'extraire du contenu textuel sur le web, pour le récupérer dans un fichier csv ou json, ou encore un array (etc..). Les contenus sont extraits à l'aide de filtres XPATH ou REGEX.";
 		$_SESSION ['koinkoin314'] ['configuration_maquettes'] [0] ['code_id'] = "M0";
 		$_SESSION ['koinkoin314'] ['configuration_maquettes'] [0] ['titre'] = "Maquette qui se charge de récupérer le code source de 1 page web https de leboncoin, pour lui appliquer 1 filtre xpath";
 		$_SESSION ['koinkoin314'] ['configuration_maquettes'] [0] ['objectif'] = "Scraper une URL_HTTPS avec un filtre XPATH pour obtenir un TEXTE";

@@ -681,13 +681,14 @@ This is a list of all the values from the <code><b><?php echo realpath($ini_file
 			fclose($fp);
 			}
 		
-		// defautl skin ?
-		//
-		if (!$css && ($skin != 'default')) {
-			$skin = 'default';
-			$_ = KRUMO_DIR . "skins/default/skin.css";
-			$css = join('', @file($_));
-			}
+			// SDE
+// 		// defautl skin ?
+// 		//
+// 		if (!$css && ($skin != 'default')) {
+// 			$skin = 'default';
+// 			$_ = KRUMO_DIR . "skins/default/skin.css";
+// 			$css = join('', @file($_));
+// 			}
 		
 		// print ?
 		//

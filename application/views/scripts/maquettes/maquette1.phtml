@@ -37,6 +37,13 @@
 	font-style: italic;
 }
 
+ h1 {
+	color: #000000;
+	font-size: 54px;
+	font-weight: normal;
+	font-style: italic;
+}
+
 .dump .info-type {
 	color: #e88046;
 }
@@ -374,37 +381,42 @@ strong.krumo-array-length, strong.krumo-string-length {
 	<h1 class="var">
 		<a href="./../index/">KOINKOIN</a> - <a href="./../maquettes/">MAQUETTES</a>
 	</h1>
-	<h1>Maquette 1 ............</h1>
-	<h3 class="var">DESCRIPTION</h3>
+	<h2>Maquette 1 ............</h2>
+	<h1>DESCRIPTION</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
 	foreach ( $kksession->maquettes_configs->maquette [0]->description as $description ) {
 		echo "<p>" . $description->fr . "</p>";
 	}
 	?>
-	<h3 class="var">URLS DE DEPART</h3>
+	<h1>URLS DE DEPART</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
 	echo "<p>" . $kksession->filtres_configs->filtres_xpath [0]->urls_de_depart [0]->url . "</p>";
 	
 	?>
-	<h3 class="var">FILTRE XPATH</h3>
+	<h1>FILTRE XPATH</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
-	echo $kksession->filtres_configs->filtres_xpath [0]->patterns [0]?></pre>
-	<h3 class="var">RESULTAT XPATH</h3>
+	echo $kksession->filtres_configs->filtres_xpath [0]->patterns [0];
+	foreach ($kksession->filtres_configs->filtres_xpath [0]->descriptions as $descriptionxpath) {
+		echo "<p>" . $descriptionxpath->fr . "</p>";
+	}
+	
+	?></pre>
+	<h1>RESULTAT XPATH</h1>
 	<p><?php echo $kksession->filtres_configs->filtres_xpath [0]->resultat ?></p>
-	<h3 class="var">SESSION (PHP_KRUMO)</h3>
+	<h1>DUMP_KRUMO (session)</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
 	$kksession->library->dump_krumo->dump_krumos ();
 	?>
-	<h3 class="var">SESSION (DD_DUMP)</h3>
+	<h1>DUMP_DD (session)</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
 	$kksession->library->dump_dd->dump_dd ( $_SESSION );
 	?>
-	<h3 class="var">SESSION (PHP_DUMP_MARCOU)</h3>
+	<h1>DUMP_MARCOU (session)</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
 	$kksession->library->dump_marcou->dump_marcou ( $_SESSION );

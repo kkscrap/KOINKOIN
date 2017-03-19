@@ -1,7 +1,6 @@
 <?php
 class koinkoin_fonctions_dump {
 	public function __construct() {
-		// $kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_dd/dump_dd.php'; // SDE #27
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_marcou/dump.php';
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_krumo/class.krumo.php';
@@ -28,8 +27,8 @@ class koinkoin_fonctions_dump {
 		$tmp = new Krumo ();
 		return $tmp::Dump ( $var );
 	}
-	public function dump_krumos($var) {
-		// Liste des variables de session sans parametres
+	public function dump_krumos() {
+		// Obtenir la liste des variables de session sans parametres
 		$tmp = new Krumo ();
 		return $tmp::Session ();
 	}

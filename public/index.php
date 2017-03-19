@@ -18,24 +18,16 @@ class koinkoin {
 	public function __construct() {
 		$this->construct_zend ();
 		$this->construct_session ();
-		$this->construct_projet_config ();
 		$this->construct_library_koinkoin ();
 		$this->main ();
 	}
 	private function main() {
 	}
-	private function construct_projet_config() {
-		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
-		$kksession->projet_config = new stdClass ();
-		$kksession->projet_config->nom = 'koinkoin314';
-		$kksession->projet_config->descriptif = new stdClass ();
-		$kksession->projet_config->descriptif->fr = "Koinkoin est un projet php/zend qui permet(tra) d'extraire du contenu textuel sur le web, pour le récupérer dans un fichier csv ou json, ou encore un array (etc..). Les contenus sont extraits à l'aide de filtres XPATH ou REGEX.";
-		$kksession->projet_config->descriptif->usa = "Koinkoin is a php/zend scripts for extract you text contents on web - and put if into csv or json files with regex or xpath filters";
-	}
 	private function construct_library_koinkoin() {
 		$this->construct_library_koinkoin_dump ();
 		$this->construct_library_koinkoin_curl ();
 		$this->construct_library_koinkoin_xpath ();
+		$this->construct_library_koinkoin_configs ();
 	}
 	private function construct_library_koinkoin_dump() {
 		$this->construct_library_koinkoin_dump_dd ();
@@ -49,7 +41,7 @@ class koinkoin {
 		$kksession->library = new stdClass ();
 		$kksession->library->dump_dd = new stdClass ();
 		$kksession->library->dump_dd = new koinkoin_fonctions_dump ();
-// 		$kksession->library->dump_dd->dump_dd ( $_SESSION );
+		// $kksession->library->dump_dd->dump_dd ( $_SESSION );
 	}
 	private function construct_library_koinkoin_dump_idealitic() {
 		// SDE #23
@@ -59,28 +51,31 @@ class koinkoin {
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_koinkoin.php';
 		$kksession->library->dump_marcou = new stdClass ();
 		$kksession->library->dump_marcou = new koinkoin_fonctions_dump ();
-// 		$kksession->library->dump_marcou->dump_marcou ( $_SESSION );
+		// $kksession->library->dump_marcou->dump_marcou ( $_SESSION );
 	}
 	private function construct_library_koinkoin_dump_krumo() {
 		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_koinkoin.php';
 		$kksession->library->dump_krumo = new stdClass ();
 		$kksession->library->dump_krumo = new koinkoin_fonctions_dump ();
-// 		$kksession->library->dump_krumo->dump_krumo ( $_SESSION );
+		// $kksession->library->dump_krumo->dump_krumo ( $_SESSION );
 	}
 	private function construct_library_koinkoin_curl() {
 		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
-		require_once APPLICATION_PATH . '/../library/Koinkoin/curl/koinkoin_fonctions_curl.php';
+		require_once APPLICATION_PATH . '/../library/Koinkoin/curl/curl_koinkoin.php';
 		$kksession->library->curl_kkcurl = new stdClass ();
 		$kksession->library->curl_kkcurl = new koinkoin_fonctions_curl ();
 		// $kksession->resultat_curl = $kksession->library->curl_kkcurl->get_curl_1_page_ssl ( "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0" );
 	}
 	private function construct_library_koinkoin_xpath() {
 		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
-		require_once APPLICATION_PATH . '/../library/Koinkoin/xpath/koinkoin_fonctions_xpath.php';
+		require_once APPLICATION_PATH . '/../library/Koinkoin/xpath/xpath_koinkoin.php';
 		$kksession->library->xpath_kkxpath = new stdClass ();
 		$kksession->library->xpath_kkxpath = new koinkoin_fonctions_xpath ();
 		// $kksession->resultat_xpath = $kksession->library->xpath_kkxpath->get_xpath_1_filtre_sur_1_html ( $kksession->resultat_curl, ".//*[@id='all']/ul[3]/li[1]/h2", 1 );
+	}
+	private function construct_library_koinkoin_configs() {
+		require_once APPLICATION_PATH . '/../library/Koinkoin/configs/configs_koinkoin.php';
 	}
 	private function construct_session() {
 		Zend_Session::start ( 'koinkoin314' );
@@ -102,6 +97,6 @@ class koinkoin {
 		}
 	}
 }
-$koinkoin314 = new koinkoin ();
-$koinkoin314->kkzend->bootstrap ()->run ();
+$koinkoin = new koinkoin ();
+$koinkoin->kkzend->bootstrap ()->run ();
 ?>

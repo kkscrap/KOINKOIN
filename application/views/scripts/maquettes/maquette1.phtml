@@ -105,38 +105,40 @@
 </head>
 <body class="dump">
 	<h1 class="var">
-		<a href="../index/">KOINKOIN</a> - maquette 1
+		<a href="./../index/">KOINKOIN</a>
 
 	</h1>
+	<h1><a href='./../maquettes/'>MAQUETTES</a></h1>
+	<h3>Maquette 1 ............</h3>
 	<h3 class="var">OBJECTIF</h3>
 	<p><?php echo $_SESSION ['koinkoin314']  ['configuration_maquettes'] [0] ['objectif']?></p>
 	<h3 class="var">DESCRIPTION</h3>
 	<?php
 	
-	foreach ( $_SESSION ['koinkoin314'] ['configuration_filtres'] [0] ["description"] as $description_filtre ) {
-		echo "<p>" . $description_filtre . "</p>";
-	}
-	?>
-	<h3 class="var">URLS DE DEPART</h3>
+// 	foreach ( $_SESSION ['koinkoin314'] ['configuration_filtres'] [0] ["description"] as $description_filtre ) {
+// 		echo "<p>" . $description_filtre . "</p>";
+// 	}
+// 	?>
+<!-- 	<h3 class="var">URLS DE DEPART</h3> -->
 	<?php
-	foreach ( $_SESSION ['koinkoin314'] ['configuration_filtres'] [0] ['urls_de_depart'] [0] ['url'] as $url_de_depart ) {
-		echo "<p>" . $url_de_depart . "</p>";
-	}
-	?>
-	<h3 class="var">FILTRE XPATH</h3>
-	<p>
+// 	foreach ( $_SESSION ['koinkoin314'] ['configuration_filtres'] [0] ['urls_de_depart'] [0] ['url'] as $url_de_depart ) {
+// 		echo "<p>" . $url_de_depart . "</p>";
+// 	}
+// 	?>
+<!-- 	<h3 class="var">FILTRE XPATH</h3> -->
+<!-- 	<p> -->
 	
 	
 	<pre><?php echo $_SESSION ['koinkoin314']  ['configuration_filtres'] [0] ["pattern"] ?></pre>
-	</p>
+<!-- 	</p> -->
 
-	<h3 class="var">RESULTAT XPATH</h3>
+<!-- 	<h3 class="var">RESULTAT XPATH</h3> -->
 	<p><?php echo $_SESSION ['koinkoin314'] ['resultats_filtres'] [0] ['match_xpath'] ?></p>
 
-	<h3 class="var">SESSION (DD_DUMP)</h3>
+<!-- 	<h3 class="var">SESSION (DD_DUMP)</h3> -->
 	<p><?php echo $_SESSION ['koinkoin314'] ['library_dump'] ['dd_dump']->dump_dd_dump ( $_SESSION ); ?></p>
 
-	<h3 class="var">SESSION (PHP_DUMP_MARCOU)</h3>
+<!-- 	<h3 class="var">SESSION (PHP_DUMP_MARCOU)</h3> -->
 	<p><?php echo $_SESSION ['koinkoin314'] ['library_dump'] ['php_dump_marcou']->php_dump_marcou ( $_SESSION ); ?></p>
 
 

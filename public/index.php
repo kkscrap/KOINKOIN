@@ -1,21 +1,16 @@
 <?php
-
-/*
- * _ __ ____ _____ _ _ _ _ ____ _____ _ _
+/*  _ __ ____ _____ _ _ _ _ ____ _____ _ _
  * | |/ // __ \|_ _|| \ | || |/ // __ \|_ _|| \ | |
  * | ' /| | | | | | | \| || ' /| | | | | | | \| |
  * | < | | | | | | | . ` || < | | | | | | | . ` |
  * | . \| |__| |_| |_ | |\ || . \| |__| |_| |_ | |\ |
  * |_|\_\\____/|_____||_| \_||_|\_\\____/|_____||_| \_|
  *
- * Koinkoin est un programme php/zend qui permet d'extraire du contenu sur le web,
- * que l'on recupere(ra) sous la forme de csv ou d'autres formats
- *
  * Site internet : http://dreamproject.fr/koinkoin/public
  * Github : https://github.com/kkscrap/koinkoin
  * Wiki : http://dreamproject.fr/koinkoin/wiki
  * Forum : http://dreamproject.fr/koinkoin/forum
- * Mail : koinkoin-php@dreamproject.fr
+ * Mail : koinkoin-php( at )dreamproject( point.) fr
  */
 class koinkoin {
 	public $obj_zend;
@@ -76,7 +71,7 @@ class koinkoin {
 	}
 	private function construct_zend() {
 		defined ( 'APPLICATION_PATH' ) || define ( 'APPLICATION_PATH', realpath ( dirname ( __FILE__ ) . '/../application' ) );
-		defined ( 'APPLICATION_ENV' ) || define ( 'APPLICATION_ENV', (getenv ( 'APPLICATION_ENV' ) ? getenv ( 'APPLICATION_ENV' ) : 'developpement') );
+		defined ( 'APPLICATION_ENV' ) || define ( 'APPLICATION_ENV', (getenv ( 'APPLICATION_ENV' ) ? getenv ( 'APPLICATION_ENV' ) : 'development') );
 		set_include_path ( implode ( PATH_SEPARATOR, array (
 				realpath ( APPLICATION_PATH . '/../library' ),
 				get_include_path () 

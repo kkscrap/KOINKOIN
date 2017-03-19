@@ -4,8 +4,16 @@ Attention que les paths ressemblent a ca
 
 
 http://dreamproject.fr/koinkoin/public/index/
+
+
 http://dreamproject.fr/koinkoin/public/maquettes/
+
+
+http://dreamproject.fr/koinkoin/public/maquettes/maquette1
+
+
 http://dreamproject.fr/koinkoin/archives/
+
 
 
 

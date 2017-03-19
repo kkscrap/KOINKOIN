@@ -461,10 +461,10 @@ if (! is_callable ( 'd' )) {
 						$this->checkType ( $value );
 					} else {
 						
-						// SDE : cacher password
-						if (is_string ( $value ) && $key == 'password') {
-							$value = "[PRIVE...]";
-						}
+// 						// SDE : cacher password
+// 						if (is_string ( $value ) && $key == 'password') {
+// 							$value = "[PRIVE...]";
+// 						}
 						if (is_bool ( $value )) {
 							$value = ($value == 1) ? "[TRUE]" : "[FALSE]";
 						}

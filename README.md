@@ -7,7 +7,7 @@ Site internet   : http://dreamproject.fr/koinkoin/public
 Bug avec les urls !!!!!!!!!!
 
 
-Attention que les urls contiennent bien "public/"
+Attention que les urls contiennent bien "public/" (sauf archives/)
 
 
 http://dreamproject.fr/koinkoin/public/index/

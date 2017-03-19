@@ -1,4 +1,4 @@
 <?php
-define('APPLICATION_ENV','development');
-// define('APPLICATION_ENV','prod');
+define('APPLICATION_ENV','production');
+// define('APPLICATION_ENV','development');
 ?>

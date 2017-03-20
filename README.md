@@ -22,5 +22,5 @@ http://dreamproject.fr/koinkoin/public/maquettes/maquette1
 http://dreamproject.fr/koinkoin/archives/
 
 <p align="center">
-  <img src="https://github.com/kkscrap/KOINKOIN/blob/master/archives/KOINKOIN_dump_complet_avec_session_explodee.png" width="350"/>
+  <img src="https://github.com/kkscrap/KOINKOIN/blob/master/archives/KOINKOIN_screenshot_20170320.png" width="350"/>
 </p>

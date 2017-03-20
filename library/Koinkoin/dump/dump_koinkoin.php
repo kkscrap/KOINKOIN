@@ -1,5 +1,5 @@
 <?php
-class koinkoin_fonctions_dump {
+class dump_koinkoin {
 	public function __construct() {
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_dd/dump_dd.php'; // SDE #27
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_marcou/dump.php';

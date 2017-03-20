@@ -396,17 +396,17 @@ strong.krumo-array-length, strong.krumo-string-length {
 	<h1>DUMP_KRUMO (session)</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'kks_library' );
-	$kksession->library->dump_krumo->dump_krumos ();
+	$kksession->dump_krumo->dump_krumos ();
 	?>
 	<h1>DUMP_DD (session)</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'kks_library' );
-	$kksession->library->dump_dd->dump_dd ( $_SESSION );
+	$kksession->dump_dd->dump_dd ( $_SESSION );
 	?>
 	<h1>DUMP_MARCOU (session)</h1>
 	<?php
 	$kksession = new \Zend_Session_Namespace ( 'kks_library' );
-	$kksession->library->dump_marcou->dump_marcou ( $_SESSION );
+	$kksession->dump_marcou->dump_marcou ( $_SESSION );
 	?>
 
 	<?php

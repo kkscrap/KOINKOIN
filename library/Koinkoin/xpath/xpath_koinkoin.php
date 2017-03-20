@@ -1,5 +1,5 @@
 <?php
-class koinkoin_fonctions_xpath {
+class xpath_koinkoin {
 	public function __construct() {
 	}
 	public function get_xpath_1_filtre_sur_1_html($txt_source_html, $filtre, $tidy) {

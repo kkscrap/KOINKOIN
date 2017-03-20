@@ -1,5 +1,5 @@
 <?php
-class koinkoin_fonctions_curl {
+class curl_koinkoin {
 	public function __construct() {
 	}
 	public function get_curl_1_page_non_ssl($Url) {

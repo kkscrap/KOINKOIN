@@ -36,54 +36,52 @@ class koinkoin {
 		$this->construct_library_koinkoin_dump_krumo ();
 	}
 	private function construct_library_koinkoin_dump_dd() {
-		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
+		$kksessionl = new \Zend_Session_Namespace ( 'kks_library' );
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_koinkoin.php';
-		$kksession->library = new stdClass ();
-		$kksession->library->dump_dd = new stdClass ();
-		$kksession->library->dump_dd = new koinkoin_fonctions_dump ();
-		// $kksession->library->dump_dd->dump_dd ( $_SESSION );
+		$kksessionl->library = new stdClass ();
+		$kksessionl->library->dump_dd = new stdClass ();
+		$kksessionl->library->dump_dd = new koinkoin_fonctions_dump ();
+		// $kksessionl->library->dump_dd->dump_dd ( $_SESSION );
 	}
 	private function construct_library_koinkoin_dump_idealitic() {
 		// SDE #23
 	}
 	private function construct_library_koinkoin_dump_marcou() {
-		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
+		$kksessionl = new \Zend_Session_Namespace ( 'kks_library' );
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_koinkoin.php';
-		$kksession->library->dump_marcou = new stdClass ();
-		$kksession->library->dump_marcou = new koinkoin_fonctions_dump ();
-		// $kksession->library->dump_marcou->dump_marcou ( $_SESSION );
+		$kksessionl->library->dump_marcou = new stdClass ();
+		$kksessionl->library->dump_marcou = new koinkoin_fonctions_dump ();
+		// $kksessionl->library->dump_marcou->dump_marcou ( $_SESSION );
 	}
 	private function construct_library_koinkoin_dump_krumo() {
-		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
+		$kksessionl = new \Zend_Session_Namespace ( 'kks_library' );
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_koinkoin.php';
-		$kksession->library->dump_krumo = new stdClass ();
-		$kksession->library->dump_krumo = new koinkoin_fonctions_dump ();
-		// $kksession->library->dump_krumo->dump_krumo ( $_SESSION );
+		$kksessionl->library->dump_krumo = new stdClass ();
+		$kksessionl->library->dump_krumo = new koinkoin_fonctions_dump ();
+		// $kksessionl->library->dump_krumo->dump_krumo ( $_SESSION );
 	}
 	private function construct_library_koinkoin_curl() {
-		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
+		$kksessionl = new \Zend_Session_Namespace ( 'kks_library' );
 		require_once APPLICATION_PATH . '/../library/Koinkoin/curl/curl_koinkoin.php';
-		$kksession->library->curl_kkcurl = new stdClass ();
-		$kksession->library->curl_kkcurl = new koinkoin_fonctions_curl ();
-		// $kksession->resultat_curl = $kksession->library->curl_kkcurl->get_curl_1_page_ssl ( "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0" );
+		$kksessionl->library->curl_koinkoin = new stdClass ();
+		$kksessionl->library->curl_koinkoin = new curl_koinkoin ();
+		// $kksessionl->resultat_curl = $kksessionl->library->curl_kkcurl->get_curl_1_page_ssl ( "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0" );
 	}
 	private function construct_library_koinkoin_xpath() {
-		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
+		$kksessionl = new \Zend_Session_Namespace ( 'kks_library' );
 		require_once APPLICATION_PATH . '/../library/Koinkoin/xpath/xpath_koinkoin.php';
-		$kksession->library->xpath_kkxpath = new stdClass ();
-		$kksession->library->xpath_kkxpath = new koinkoin_fonctions_xpath ();
-		// $kksession->resultat_xpath = $kksession->library->xpath_kkxpath->get_xpath_1_filtre_sur_1_html ( $kksession->resultat_curl, ".//*[@id='all']/ul[3]/li[1]/h2", 1 );
+		$kksessionl->library->xpath_koinkoin = new stdClass ();
+		$kksessionl->library->xpath_koinkoin = new xpath_koinkoin ();
+		// $kksessionl->resultat_xpath = $kksessionl->library->xpath_kkxpath->get_xpath_1_filtre_sur_1_html ( $kksessionl->resultat_curl, ".//*[@id='all']/ul[3]/li[1]/h2", 1 );
 	}
 	private function construct_library_koinkoin_configs() {
 		require_once APPLICATION_PATH . '/../library/Koinkoin/configs/configs_koinkoin.php';
 	}
 	private function construct_session() {
-		Zend_Session::start ( 'koinkoin314' );
-		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
-		$kksessionc = new \Zend_Session_Namespace ( 'koinkoin314_configs' );
-		$kksession->unsetAll ();
-		$kksessionc->unsetAll ();
-		}
+		Zend_Session::start ();
+		$kksessionl = new \Zend_Session_Namespace ( 'kks_library' );
+		$kksessionl->unsetAll ();
+	}
 	private function construct_zend() {
 		defined ( 'APPLICATION_PATH' ) || define ( 'APPLICATION_PATH', realpath ( dirname ( __FILE__ ) . '/../application' ) );
 		defined ( 'APPLICATION_ENV' ) || define ( 'APPLICATION_ENV', (getenv ( 'APPLICATION_ENV' ) ? getenv ( 'APPLICATION_ENV' ) : 'development') );
@@ -99,6 +97,6 @@ class koinkoin {
 		}
 	}
 }
-$koinkoin = new koinkoin ();
-$koinkoin->kkzend->bootstrap ()->run ();
+$koinkoin314 = new koinkoin ();
+$koinkoin314->kkzend->bootstrap ()->run ();
 ?>

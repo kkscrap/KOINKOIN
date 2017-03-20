@@ -12,6 +12,12 @@ http://dreamproject.fr/koinkoin/public/maquettes/
 
 http://dreamproject.fr/koinkoin/public/maquettes/maquette1
 
+http://127.0.0.1/koinkoin/public/maquettes/
+
+http://127.0.0.1/koinkoin/public/maquettes/maquette1
+
+http://127.0.0.1/koinkoin/public/maquettes/maquette1
+
 Bug avec les urls sur la demo en ligne et sur localhost 
 
 Verifier que les urls contiennent bien "public/" (sauf archives/), ou pas plusieurs fois index/ (etc..)

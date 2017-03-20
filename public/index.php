@@ -80,8 +80,10 @@ class koinkoin {
 	private function construct_session() {
 		Zend_Session::start ( 'koinkoin314' );
 		$kksession = new \Zend_Session_Namespace ( 'koinkoin314' );
+		$kksessionc = new \Zend_Session_Namespace ( 'koinkoin314_configs' );
 		$kksession->unsetAll ();
-	}
+		$kksessionc->unsetAll ();
+		}
 	private function construct_zend() {
 		defined ( 'APPLICATION_PATH' ) || define ( 'APPLICATION_PATH', realpath ( dirname ( __FILE__ ) . '/../application' ) );
 		defined ( 'APPLICATION_ENV' ) || define ( 'APPLICATION_ENV', (getenv ( 'APPLICATION_ENV' ) ? getenv ( 'APPLICATION_ENV' ) : 'development') );

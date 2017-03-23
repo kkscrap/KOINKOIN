@@ -1,7 +1,7 @@
 <?php
 class dump_koinkoin {
 	public function __construct() {
-		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_dd/dump_dd.php'; // SDE #27
+		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_dd/dump_dd.php'; // KKSCRAP #27
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_marcou/dump.php';
 		require_once APPLICATION_PATH . '/../library/Koinkoin/dump/dump_krumo/class.krumo.php';
 	}

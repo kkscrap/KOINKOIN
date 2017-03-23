@@ -19,3 +19,6 @@ https://github.com/kkscrap/KOINKOIN/tree/master/archives
 
 Bug avec les urls sur la demo en ligne et sur localhost. Verifier que les urls contiennent bien "public/" (sauf archives/), ou pas plusieurs fois index/ (etc..)
 
++<p align="center"><img src="https://github.com/kkscrap/KOINKOIN/blob/master/archives/KOINKOIN_20170323_dumpdd_session.png" width="350"/></p>
+  
+  Bug avec les urls sur la demo en ligne et sur localhost. Verifier que les urls contiennent bien "public/" (sauf archives/), ou pas plusieurs fois index/ (etc..)

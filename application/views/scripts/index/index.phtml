@@ -421,6 +421,17 @@ $kksession->dump_dd->dump_dd($_SESSION['kks_urls']);
 // $kksession->dump_marcou->dump_marcou ( $_SESSION );
 ?>
 
+	<h4>session -> kksxpath [ kks_xpath ]</h4>
+	<?php
+$kksession = new \Zend_Session_Namespace('kks_library');
+$kksession->dump_dd->dump_dd($_SESSION['kks_xpath']);
+?>
+<!-- 	<h1>DUMP_MARCOU (session)</h1> -->
+	<?php
+// $kksession = new \Zend_Session_Namespace ( 'kks_library' );
+// $kksession->dump_marcou->dump_marcou ( $_SESSION );
+?>
+
 	<h4>session -> kksregex [ kks_regex ]</h4>
 	<?php
 $kksession = new \Zend_Session_Namespace('kks_library');

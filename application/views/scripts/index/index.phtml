@@ -17,7 +17,7 @@
 	border: 1px dotted #d2d2d2;
 	color: #666666;
 	line-height: 20px;
-	font-size: 13px;
+	font-size: 11px;
 	/* Pour avoir un retour à la ligne si la ligne dépasse la largeur du cadre */
 	/*white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
@@ -102,6 +102,7 @@
 	color: #bbbbbb;
 	font-style: italic;
 }
+
 ul.krumo-node {
 	margin: 0px;
 	padding: 0px;
@@ -259,7 +260,6 @@ div.krumo-title {
 strong.krumo-array-length, strong.krumo-string-length {
 	font-weight: normal;
 }
-
 </style>
 </head>
 <body class="dump">
@@ -369,48 +369,94 @@ strong.krumo-array-length, strong.krumo-string-length {
   </script>
 
 
-	<h1 class="var">KOINKOIN</h1>
-	<p></p>
-	<p>
-		==> <a href='https://github.com/kkscrap/koinkoin'>Koinkoin sur Github</a>
-	</p>
-	<p>
-		==> <a href='http://dreamproject.fr/koinkoin/wiki'>Wiki</a>
-	</p>
-	<p>
-		==> <a href='http://dreamproject.fr/koinkoin/forum'>Forum de
-			discussion</a>
-	</p>
-	<h2>
-		<a href='./../maquettes/'>MAQUETTES</a>
-	</h2>
-	<h2 class="var">ARCHIVES</h2>
-	<ol>
-		<li><a
-			href='../../archives/screenshot_tout_premier_screenshot_maquette_1.png'>20170315
-				==> Screenshot (dump)</a></li>
-		<li><a href='../../archives/screenshot_maquette_20170318.png'>20170318
-				==> Screenshot (2eme dump)</a></li>
-		<li><a href='../../archives/'>20170318 ==> AUTRES ARCHIVES</a></li>
-	</ol>
-	<h1>DUMP_KRUMO (session)</h1>
+	<img src="./images/koinkoin_logo.jpg" />
+	<h1 class="var">DUMP_DD</h1>
+	<!-- 	<p></p> -->
+	<!-- 	<p> -->
+	<!-- 		==> <a href='https://github.com/kkscrap/koinkoin'>Koinkoin sur Github</a> -->
+	<!-- 	</p> -->
+	<!-- 	<p> -->
+	<!-- 		==> <a href='http://dreamproject.fr/koinkoin/wiki'>Wiki</a> -->
+	<!-- 	</p> -->
+	<!-- 	<p> -->
+	<!-- 		==> <a href='http://dreamproject.fr/koinkoin/forum'>Forum de -->
+	<!-- 			discussion</a> -->
+	<!-- 	</p> -->
+	<!-- 	<h2> -->
+	<!-- 		<a href='./../maquettes/'>MAQUETTES</a> -->
+	<!-- 	</h2> -->
+	<!-- 	<h2 class="var">ARCHIVES</h2> -->
+	<!-- 	<ol> -->
+	<!-- 		<li><a -->
+	<!-- 			href='../../archives/screenshot_tout_premier_screenshot_maquette_1.png'>20170315 -->
+	<!-- 				==> Screenshot (dump)</a></li> -->
+	<!-- 		<li><a href='../../archives/screenshot_maquette_20170318.png'>20170318 -->
+	<!-- 				==> Screenshot (2eme dump)</a></li> -->
+	<!-- 		<li><a href='../../archives/'>20170318 ==> AUTRES ARCHIVES</a></li> -->
+	<!-- 	</ol> -->
+	<!-- 	<h1>DUMP_KRUMO (session)</h1> -->
 	<?php
-	$kksession = new \Zend_Session_Namespace ( 'kks_library' );
-	$kksession->dump_krumo->dump_krumos ();
-	?>
-	<h1>DUMP_DD (session)</h1>
+// $kksession = new \Zend_Session_Namespace ( 'kks_library' );
+// $kksession->dump_krumo->dump_krumos ();
+?>
+	<h4>session -> kksmaquettes [ kks_maquettes ]</h4>
 	<?php
-	$kksession = new \Zend_Session_Namespace ( 'kks_library' );
-	$kksession->dump_dd->dump_dd ( $_SESSION );
-	?>
-	<h1>DUMP_MARCOU (session)</h1>
+$kksession = new \Zend_Session_Namespace('kks_library');
+$kksession->dump_dd->dump_dd($_SESSION['kks_maquettes']);
+?>
+<!-- 	<h1>DUMP_MARCOU (session)</h1> -->
 	<?php
-	$kksession = new \Zend_Session_Namespace ( 'kks_library' );
-	$kksession->dump_marcou->dump_marcou ( $_SESSION );
-	?>
+// $kksession = new \Zend_Session_Namespace ( 'kks_library' );
+// $kksession->dump_marcou->dump_marcou ( $_SESSION );
+?>
+
+	<h4>session -> kksurls [ kks_urls ]</h4>
+	<?php
+$kksession = new \Zend_Session_Namespace('kks_library');
+$kksession->dump_dd->dump_dd($_SESSION['kks_urls']);
+?>
+<!-- 	<h1>DUMP_MARCOU (session)</h1> -->
+	<?php
+// $kksession = new \Zend_Session_Namespace ( 'kks_library' );
+// $kksession->dump_marcou->dump_marcou ( $_SESSION );
+?>
+
+	<h4>session -> kksregex [ kks_regex ]</h4>
+	<?php
+$kksession = new \Zend_Session_Namespace('kks_library');
+$kksession->dump_dd->dump_dd($_SESSION['kks_regex']);
+?>
+<!-- 	<h1>DUMP_MARCOU (session)</h1> -->
+	<?php
+// $kksession = new \Zend_Session_Namespace ( 'kks_library' );
+// $kksession->dump_marcou->dump_marcou ( $_SESSION );
+?>
+
+	<h4>session -> kksscripts [ kks_scripts ]</h4>
+	<?php
+$kksession = new \Zend_Session_Namespace('kks_library');
+$kksession->dump_dd->dump_dd($_SESSION['kks_scripts']);
+?>
+<!-- 	<h1>DUMP_MARCOU (session)</h1> -->
+	<?php
+// $kksession = new \Zend_Session_Namespace ( 'kks_library' );
+// $kksession->dump_marcou->dump_marcou ( $_SESSION );
+?>
+
+	<h4>session -> kkstidy [ kks_tidy ]</h4>
+	<?php
+$kksession = new \Zend_Session_Namespace('kks_library');
+$kksession->dump_dd->dump_dd($_SESSION['kks_tidy']);
+?>
+<!-- 	<h1>DUMP_MARCOU (session)</h1> -->
+	<?php
+// $kksession = new \Zend_Session_Namespace ( 'kks_library' );
+// $kksession->dump_marcou->dump_marcou ( $_SESSION );
+?>
+
 
 	<?php
-	?>
+?>
 
 </p>
 

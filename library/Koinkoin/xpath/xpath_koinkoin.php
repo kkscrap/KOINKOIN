@@ -1,6 +1,7 @@
 <?php
 class xpath_koinkoin {
 	public function __construct() {
+		require_once APPLICATION_PATH . '/../library/Koinkoin/configs/configs_koinkoin.php';
 	}
 	public function get_xpath_1_filtre_sur_1_html($txt_source_html, $filtre, $tidy) {
 		

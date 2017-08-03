@@ -1,93 +1,88 @@
 <?php
-$kkslibrary = new \Zend_Session_Namespace('kks_library');
-$kksmaquettes = new \Zend_Session_Namespace('kks_maquettes');
-$kksurls = new \Zend_Session_Namespace('kks_urls');
-$kksxpath = new \Zend_Session_Namespace('kks_xpath');
-$kksregex = new \Zend_Session_Namespace('kks_regex');
+$kkslibrary = new \Zend_Session_Namespace ( 'kks_library' );
+$kksmaquettes = new \Zend_Session_Namespace ( 'kks_maquettes' );
+$kksurls = new \Zend_Session_Namespace ( 'kks_urls' );
+$kksxpath = new \Zend_Session_Namespace ( 'kks_xpath' );
+$kksregex = new \Zend_Session_Namespace ( 'kks_regex' );
 $kksscripts = new \Zend_Session_Namespace ( 'kks_scripts' );
-$kkstidy = new \Zend_Session_Namespace('kks_tidy');
-$kksnotes = new \Zend_Session_Namespace('kks_notes');
+$kkstidy = new \Zend_Session_Namespace ( 'kks_tidy' );
+$kksnotes = new \Zend_Session_Namespace ( 'kks_notes' );
 
-$kksmaquettes->maquette1 = array();
-$kksmaquettes->maquette1[0] = new stdClass();
-$kksmaquettes->maquette1[0]->titre = "Maquette xpath";
-$kksmaquettes->maquette1[0]->zend_view = "maquette1";
-$kksmaquettes->maquette1[0]->objectif = array();
-$kksmaquettes->maquette1[0]->objectif[0] = new stdClass();
-$kksmaquettes->maquette1[0]->objectif[0]->fr = "Maquette qui scrape une
+$kksmaquettes->maquette1 = array ();
+$kksmaquettes->maquette1 [0] = new stdClass ();
+$kksmaquettes->maquette1 [0]->titre = "Maquette xpath";
+$kksmaquettes->maquette1 [0]->zend_view = "maquette1";
+$kksmaquettes->maquette1 [0]->objectif = array ();
+$kksmaquettes->maquette1 [0]->objectif [0] = new stdClass ();
+$kksmaquettes->maquette1 [0]->objectif [0]->fr = "Maquette qui scrape une
 URL_HTTPS avec un filtre XPATH pour obtenir un TEXTE";
-$kksmaquettes->maquette1[0]->objectif[0]->usa = "Scale a URL_HTTPS with an
+$kksmaquettes->maquette1 [0]->objectif [0]->usa = "Scale a URL_HTTPS with an
 XPATH filter to get a TEXT";
-$kksmaquettes->maquette1[1] = new stdClass();
-$kksmaquettes->maquette1[1]->titre = "Maquette xpath avec premier tableau de
+$kksmaquettes->maquette1 [1] = new stdClass ();
+$kksmaquettes->maquette1 [1]->titre = "Maquette xpath avec premier tableau de
 plusieurs cellules (cells)";
-$kksmaquettes->maquette1[1]->zend_view = "premiertableauxpath";
-$kksmaquettes->maquette1[1]->objectif = array();
-$kksmaquettes->maquette1[1]->objectif[0] = new stdClass();
-$kksmaquettes->maquette1[1]->objectif[0]->fr = "Maquette qui scrape plusieurs
+$kksmaquettes->maquette1 [1]->zend_view = "premiertableauxpath";
+$kksmaquettes->maquette1 [1]->objectif = array ();
+$kksmaquettes->maquette1 [1]->objectif [0] = new stdClass ();
+$kksmaquettes->maquette1 [1]->objectif [0]->fr = "Maquette qui scrape plusieurs
 pages pour constituer un tableau avec les valeurs des resultats xpath";
-$kksmaquettes->maquette1[1]->objectif[0]->usa = "A model that scraps several
+$kksmaquettes->maquette1 [1]->objectif [0]->usa = "A model that scraps several
 pages to form a table with values of xpath values";
-$kksmaquettes->maquette2 = array();
-$kksmaquettes->maquette2[0] = new stdClass();
-$kksmaquettes->maquette2[0]->titre = "Maquette regex";
-$kksmaquettes->maquette2[0]->zend_view = "maquetteregex";
-$kksmaquettes->maquette2[0]->objectif = new stdClass();
-$kksmaquettes->maquette2[0]->objectif->fr = "Maquette regex qui affiche un tableau
+$kksmaquettes->maquette2 = array ();
+$kksmaquettes->maquette2 [0] = new stdClass ();
+$kksmaquettes->maquette2 [0]->titre = "Maquette regex";
+$kksmaquettes->maquette2 [0]->zend_view = "maquetteregex";
+$kksmaquettes->maquette2 [0]->objectif = new stdClass ();
+$kksmaquettes->maquette2 [0]->objectif->fr = "Maquette regex qui affiche un tableau
 avec le titre des nouveaux articles de blogs, emanant de plusieurs sources";
-$kksmaquettes->maquette2[0]->objectif->usa = "A regex template that displays a
+$kksmaquettes->maquette2 [0]->objectif->usa = "A regex template that displays a
 table with the title of the new blog articles, emanating from several
 sources";
 
-$kksurls->url2depart = array();
-$kksurls->url2depart[0] = new stdClass();
-$kksurls->url2depart[0]->titre = new stdClass();
-$kksurls->url2depart[0]->titre->fr = "Page au hasard sur le site de
+$kksurls->url2depart = array ();
+$kksurls->url2depart [0] = new stdClass ();
+$kksurls->url2depart [0]->titre = new stdClass ();
+$kksurls->url2depart [0]->titre->fr = "Page au hasard sur le site de
 leboncoin";
-$kksurls->url2depart[0]->titre->usa = "Random page on leboncoin's website";
-$kksurls->url2depart[0]->url =
-"https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0";
+$kksurls->url2depart [0]->titre->usa = "Random page on leboncoin's website";
+$kksurls->url2depart [0]->url = "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0";
 $kksurls->url2depart [0]->notes = array ();
 $kksurls->url2depart [0]->notes [0] = "1";
-$kksurls->url2depart[0]->kktest = new stdClass();
-$kksurls->url2depart[0]->kktest = array();
-$kksurls->url2depart[0]->kktest[0] = "12";
-$kksurls->url2depart[0]->kktest[1] = "10";
-$kksurls->url2depart[0]->kktest[2] = "7";
-$kksurls->url2depart[0]->kktest[3] = "8";
-$kksurls->urls2depart = array();
-$kksurls->urls2depart[0] = new stdClass();
-$kksurls->urls2depart[0]->titre = new stdClass();
-$kksurls->urls2depart[0]->titre->fr = "Petite liste de pages de leboncoin,
+$kksurls->url2depart [0]->kktest = new stdClass ();
+$kksurls->url2depart [0]->kktest = array ();
+$kksurls->url2depart [0]->kktest [0] = "12";
+$kksurls->url2depart [0]->kktest [1] = "10";
+$kksurls->url2depart [0]->kktest [2] = "7";
+$kksurls->url2depart [0]->kktest [3] = "8";
+$kksurls->urls2depart = array ();
+$kksurls->urls2depart [0] = new stdClass ();
+$kksurls->urls2depart [0]->titre = new stdClass ();
+$kksurls->urls2depart [0]->titre->fr = "Petite liste de pages de leboncoin,
 pour le jeu de mots (sur la fin des urls)";
-$kksurls->urls2depart[0]->titre->usa = "Small list of pages of leboncoin, for
+$kksurls->urls2depart [0]->titre->usa = "Small list of pages of leboncoin, for
 the play on words (on the end of the urls)";
-$kksurls->urls2depart[0]->urls = array();
-$kksurls->urls2depart[0]->urls[0] =
-"https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0";
-$kksurls->urls2depart[0]->urls[1] =
-"https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&tarrot=0";
-$kksurls->urls2depart[0]->urls[2] =
-"https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&poirot=0";
-$kksurls->urls2depart[0]->urls[3] =
-"https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&mot=0";
+$kksurls->urls2depart [0]->urls = array ();
+$kksurls->urls2depart [0]->urls [0] = "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0";
+$kksurls->urls2depart [0]->urls [1] = "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&tarrot=0";
+$kksurls->urls2depart [0]->urls [2] = "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&poirot=0";
+$kksurls->urls2depart [0]->urls [3] = "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&mot=0";
 $kksurls->urls2depart [0]->notes = array (); // KKSCRAP #28
 $kksurls->urls2depart [0]->notes [0] = "-1";
-$kksurls->urls2depart[0]->kktest = new stdClass(); // KKSCRAP #46
-$kksurls->urls2depart[0]->kktest = array();
-$kksurls->urls2depart[0]->kktest[0] = "0";
-$kksurls->urls2depart[0]->kktest[1] = "11";
-$kksurls->urls2depart[0]->kktest[2] = "45";
+$kksurls->urls2depart [0]->kktest = new stdClass (); // KKSCRAP #46
+$kksurls->urls2depart [0]->kktest = array ();
+$kksurls->urls2depart [0]->kktest [0] = "0";
+$kksurls->urls2depart [0]->kktest [1] = "11";
+$kksurls->urls2depart [0]->kktest [2] = "45";
 $kksurls->url2deplacement = array ();
 $kksurls->urls2deplacement = array ();
 
 $kksxpath->xpath2texte = array ();
 $kksxpath->xpath2texte [0] = new stdClass ();
+// .//*[@id='listingAds']/section/section/ul/li[1]/a/section/h2 2017
 $kksxpath->xpath2texte [0]->pattern = ".//*[@id='all']/ul[3]/li[1]/h2";
-$kksxpath->xpath2texte [0]->url =
-"https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0";
+$kksxpath->xpath2texte [0]->url = "https://www.leboncoin.fr/telephonie/offres/ile_de_france/?th=1&q=ip&parrot=0";
 $kksxpath->xpath2texte [0]->kktest = array ();
-$kksxpath->xpath2texte [0]->kktest[0] = "0";
+$kksxpath->xpath2texte [0]->kktest [0] = "0";
 
 $kksregex->regex2texte = array ();
 $kksregex->regex2url = array ();
@@ -95,16 +90,16 @@ $kksregex->regex2url = array ();
 $kksscripts->script2texte = array ();
 $kksscripts->script2url = array ();
 
-$kkstidy->txt2xhtml = array();
-$kkstidy->txt2xhtml[0] = new stdClass();
-$kkstidy->txt2xhtml[0]->titre = new stdClass();
-$kkstidy->txt2xhtml[0]->titre->fr = "Le tidy convertit du code html4 non conforme en code xhtml, en reparant toute trace de tags casses";
-$kkstidy->txt2xhtml[0]->titre->usa = "The tidy converts non-conforming html4 code to xhtml code, by repairing the break tags";
+$kkstidy->txt2xhtml = array ();
+$kkstidy->txt2xhtml [0] = new stdClass ();
+$kkstidy->txt2xhtml [0]->titre = new stdClass ();
+$kkstidy->txt2xhtml [0]->titre->fr = "Le tidy convertit du code html4 non conforme en code xhtml, en reparant toute trace de tags casses";
+$kkstidy->txt2xhtml [0]->titre->usa = "The tidy converts non-conforming html4 code to xhtml code, by repairing the break tags";
 // $kkstidy->txt2xhtml [0]->notes = array ();
 // $kkstidy->txt2xhtml [0]->notes [0] = "0";
-$kkstidy->txt2xhtml[0]->kktest = new stdClass();
-$kkstidy->txt2xhtml[0]->kktest = array();
-$kkstidy->txt2xhtml[0]->kktest[0] = "21";
+$kkstidy->txt2xhtml [0]->kktest = new stdClass ();
+$kkstidy->txt2xhtml [0]->kktest = array ();
+$kkstidy->txt2xhtml [0]->kktest [0] = "21";
 
 // $kksnotes->maquettes = array (); // KKSCRAP #77
 // $kksnotes->maquettes [0] = new stdClass ();

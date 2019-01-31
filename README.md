@@ -1,12 +1,15 @@
-<h1>K O I N K O I N</h1>
+==========================  2019  =============================
 
-http://127.0.0.1/koinkoin/public/maquettes/
+# KOINKOIN
+Pour un monde rempli de koinkoins...
 
-http://127.0.0.1/koinkoin/public/maquettes/maquette1
+https://github.com/koinkoin-project
 
-ARCHIVES -> 
-https://github.com/kkscrap/KOINKOIN/tree/master/archives
+ou sur :
 
-+<p align="center"><img src="https://github.com/kkscrap/KOINKOIN/blob/master/archives/screenshot_index_2017-08-03_11-07-59.jpg" width="350"/></p>
-
-+<p align="center"><img src="https://github.com/kkscrap/KOINKOIN/blob/master/archives/20170803_koinkoin_screenshot_avec_resultat_xpath.jpg" width="350"/></p>
+YOUTUBE : https://www.youtube.com/watch?v=9e-Xcz91W3I&list=PLxZv-TkISUpSBuz4rogSWkXxVCZTH5wOY&index=5
+BLOG : https://www.dreamproject.fr/koinkoin/blog/
+GITHUB : https://github.com/koinkoin-project/KOINKOIN-CGI/
+DOCUMENTATION : https://www.dreamproject.fr/koinkoin/blog/koinkoin-cgi/
+FORUM DE DISCUSSION : https://www.dreamproject.fr/koinkoin/forum/
+WIKI : https://www.dreamproject.fr/koinkoin/wiki/

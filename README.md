@@ -1,20 +1,21 @@
-==========================  2019  =============================
-
 # KOINKOIN
 Pour un monde rempli de koinkoins...
 
-https://github.com/koinkoin-project
 
-ou sur :
+- BLOG : https://www.dreamproject.fr/koinkoin/blog/
+- DOCUMENTATION : https://www.dreamproject.fr/koinkoin/blog/koinkoin-doc/
+- FORUM DE DISCUSSION : https://www.dreamproject.fr/koinkoin/forum/
+- WIKI : https://www.dreamproject.fr/koinkoin/wiki/
 
-YOUTUBE : https://www.youtube.com/watch?v=9e-Xcz91W3I&list=PLxZv-TkISUpSBuz4rogSWkXxVCZTH5wOY&index=5
+- YOUTUBE : https://www.youtube.com/watch?v=zU3MSF3eNTE&list=PLxZv-TkISUpSBuz4rogSWkXxVCZTH5wOY
+- DAILYMOTION : https://www.dailymotion.com/koinkoin-project/videos
 
-BLOG : https://www.dreamproject.fr/koinkoin/blog/
+- FACEBOOK :
+- VIADEO :
+- REDDIT :
 
-GITHUB : https://github.com/koinkoin-project/KOINKOIN-CGI/
+- TWITTER : https://twitter.com/koinkoin15
 
-DOCUMENTATION : https://www.dreamproject.fr/koinkoin/blog/koinkoin-cgi/
+- LINKEDIN :
 
-FORUM DE DISCUSSION : https://www.dreamproject.fr/koinkoin/forum/
-
-WIKI : https://www.dreamproject.fr/koinkoin/wiki/
+[![KOINKOIN-JOB](img/KOINKOIN-JOB.jpg)](https://www.youtube.com/watch?v=YNOLaizbjWY&index=6&list=PLxZv-TkISUpSBuz4rogSWkXxVCZTH5wOY "KOINKOIN-JOB")

@@ -18,4 +18,4 @@ Pour un monde rempli de koinkoins...
 
 - LINKEDIN :
 
-[![KOINKOIN-JOB](img/KOINKOIN-JOB.jpg)](https://www.youtube.com/watch?v=YNOLaizbjWY&index=6&list=PLxZv-TkISUpSBuz4rogSWkXxVCZTH5wOY "KOINKOIN-JOB")
+[![KOINKOIN-JOB](img/KOINKOIN_JOB_1.0.8_1.0.9.png)](https://www.youtube.com/watch?v=YNOLaizbjWY&index=6&list=PLxZv-TkISUpSBuz4rogSWkXxVCZTH5wOY "KOINKOIN-JOB")
